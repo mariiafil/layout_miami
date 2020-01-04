@@ -55,11 +55,19 @@ h1 {
     font-weight: 500;
     font-size: 16px;
     color: #fff; }
+  .header__action {
+    position: relative; }
+    .header__action::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      border-bottom: 2px #fff dashed; }
   .header__action-link {
-    padding-bottom: 4px;
-    border-bottom: dashed;
     text-decoration: none;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    position: relative; }
 
 .nav__list {
   display: -webkit-box;
