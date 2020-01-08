@@ -155,13 +155,15 @@ h1 {
       padding-top: 80px;
       padding-bottom: 40px;
       position: absolute;
-      top: 0;
-      left: 0;
       right: 0;
+      left: 0;
+      top: 0;
       bottom: 0;
       display: block;
-      -webkit-transition: all 2s linear;
-      transition: all 2s linear; }
+      -webkit-animation-name: anim_menu;
+              animation-name: anim_menu;
+      -webkit-animation-duration: 1s;
+              animation-duration: 1s; }
       .nav__list::after {
         content: "";
         display: block;
@@ -186,7 +188,11 @@ h1 {
       z-index: 3;
       width: 20px;
       height: 20px;
-      background: url(../images/cross.png) no-repeat center; }
+      background: url(../images/cross.png) no-repeat center;
+      -webkit-animation-name: anim_cross;
+              animation-name: anim_cross;
+      -webkit-animation-duration: 1s;
+              animation-duration: 1s; }
     .nav__link_active, .nav__link:hover {
       background-color: transparent; }
     .nav__item_phone {
@@ -207,6 +213,40 @@ h1 {
       display: block; }
     .nav__item_call {
       display: block; } }
+
+@-webkit-keyframes anim_menu {
+  from {
+    top: 0;
+    bottom: 0;
+    left: -100%; }
+  to {
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0; } }
+
+@keyframes anim_menu {
+  from {
+    top: 0;
+    bottom: 0;
+    left: -100%; }
+  to {
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0; } }
+
+@-webkit-keyframes anim_cross {
+  from {
+    right: 105%; }
+  to {
+    right: 5%; } }
+
+@keyframes anim_cross {
+  from {
+    right: 105%; }
+  to {
+    right: 5%; } }
 
 .about {
   display: -webkit-box;
