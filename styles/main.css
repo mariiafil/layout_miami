@@ -154,7 +154,7 @@ h1 {
               flex-direction: column;
       padding-left: 50px;
       background-color: #0075ff;
-      padding-top: 80px;
+      padding-top: 120px;
       padding-bottom: 40px;
       position: absolute;
       right: 0;
@@ -291,6 +291,10 @@ h1 {
     text-align: center; }
     .about__header {
       margin-right: 0; } }
+
+@media screen and (max-width: 450px) {
+  .about__text {
+    max-width: 300px; } }
 
 .gallery {
   padding: 112px 0;
@@ -539,6 +543,10 @@ h1 {
       margin-right: 0; }
     .consultation__input, .consultation__button {
       width: 250px; } }
+
+@media screen and (max-width: 450px) {
+  .consultation__info {
+    max-width: 300px; } }
 
 .testimonials {
   position: relative;
