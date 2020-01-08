@@ -123,16 +123,16 @@ h1 {
 
 @media screen and (max-width: 956px) {
   .header__top {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding-left: 33%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 0;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
     width: 100%; }
-    .header__top *:not(:last-child) {
-      margin-right: 0; }
+    .header__top div:nth-child(n) {
+      margin: 0; }
   .header__nav {
     display: block; }
   .header__phone, .header__action-link, .header__action-link {
@@ -140,7 +140,9 @@ h1 {
   .header__action::after {
     display: none; }
   .header__phone-icon {
-    display: block; }
+    display: block;
+    position: absolute;
+    right: 10%; }
   .header__action {
     display: none; }
   .nav {
@@ -506,6 +508,8 @@ h1 {
       font-size: 14px;
       line-height: 36px;
       color: #393939; }
+    .consultation__input:focus {
+      border: #0075ff solid 1px; }
   .consultation__button {
     background-color: #00aaef;
     color: #fff;
@@ -741,6 +745,8 @@ h1 {
       font-size: 14px;
       line-height: 36px;
       color: #393939; }
+    .contact__input:focus, .contact__message:focus {
+      border: #0075ff solid 1px; }
   .contact__message {
     height: 166px; }
   .contact__button {
@@ -790,5 +796,8 @@ body section:nth-child(2n+1) {
 
 body section:nth-child(2n) {
   background-color: #fff; }
+
+html {
+  scroll-behavior: smooth; }
 
 /*# sourceMappingURL=main.css.map */
