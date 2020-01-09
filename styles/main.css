@@ -512,6 +512,8 @@ h1 {
       font-size: 14px;
       line-height: 36px;
       color: #393939; }
+    .consultation__input:focus {
+      border: 1px solid #0075ff; }
   .consultation__button {
     background-color: #00aaef;
     color: #fff;
@@ -751,6 +753,8 @@ h1 {
       font-size: 14px;
       line-height: 36px;
       color: #393939; }
+    .contact__input:focus, .contact__message:focus {
+      border: 1px solid #0075ff; }
   .contact__message {
     height: 166px; }
   .contact__button {
